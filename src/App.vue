@@ -1,12 +1,12 @@
 <script >
-import AppMain from './components/AppMain.vue';
+import ProjectCard from './components/ProjectCard.vue';
 
 export default {
-  data(){
+  data() {
     return {}
   },
   components: {
-    AppMain
+    ProjectCard
   },
 }
 
@@ -14,11 +14,8 @@ export default {
 </script>
 
 <template>
-   <h1>Bentornato Wilmer </h1>
-  <AppMain />
- 
+  <h1>Bentornato Wilmer </h1>
+  <ProjectCard />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
