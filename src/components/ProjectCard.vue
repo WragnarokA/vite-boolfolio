@@ -98,7 +98,7 @@ export default {
         <div class="container-fluid">
             <a class="navbar-brand">Main Posts</a>
             <a class="btn btn-primary m-1" href="/">home</a>
-            <a class="btn btn-primary m-1" href="/about-us">about</a>
+            <router-link :to="{ name: 'about' }" class="btn btn-primary m-1">about</router-link>
             <span class="navbar-text"> Posts (Page: {{ postsCurrentPage }} di {{ postTotalPages }})</span>
             <span class="navbar-text">
                 <h3 v-if="loading">Caricamento in corso</h3>
