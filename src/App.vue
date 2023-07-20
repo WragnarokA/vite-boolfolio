@@ -1,5 +1,4 @@
 <script >
-import ProjectCard from './components/ProjectCard.vue';
 
 export default {
   data() {
@@ -9,13 +8,17 @@ export default {
     ProjectCard
   },
 }
+</script> 
 
 
-</script>
+
 
 <template>
-  <h1>Bentornato Wilmer </h1>
-  <ProjectCard />
+  <!-- <header>
+  Bar
+</header> -->
+
+  <router-view></router-view>
 </template>
 
 <style scoped></style>
