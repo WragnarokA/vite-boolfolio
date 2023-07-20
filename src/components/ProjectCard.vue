@@ -97,6 +97,8 @@ export default {
     <nav class="navbar bg-body-tertiary mb-4  ">
         <div class="container-fluid">
             <a class="navbar-brand">Main Posts</a>
+            <a class="btn btn-primary m-1" href="/">home</a>
+            <a class="btn btn-primary m-1" href="/about-us">about</a>
             <span class="navbar-text"> Posts (Page: {{ postsCurrentPage }} di {{ postTotalPages }})</span>
             <span class="navbar-text">
                 <h3 v-if="loading">Caricamento in corso</h3>
