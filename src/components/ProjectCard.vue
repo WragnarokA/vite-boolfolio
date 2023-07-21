@@ -28,6 +28,7 @@ export default {
             }).catch(err => {
                 this.loading = false;
                 this.loadingError = err.message;
+                this.$router.push({ name: 'not-found' })
             });
 
         },

@@ -8,6 +8,9 @@ export default {
                 { name: "home", lavel: "Home" },
                 { name: "about", lavel: "Abaut us" },
                 { name: "posts", lavel: "Posts" },
+                { name: "not-found", lavel: "Not-found" },
+
+
             ]
 
         }
