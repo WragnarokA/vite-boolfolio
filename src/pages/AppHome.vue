@@ -8,7 +8,7 @@ export default {
                 { name: "home", lavel: "Home" },
                 { name: "about", lavel: "Abaut us" },
                 { name: "posts", lavel: "Posts" },
-                { name: "not-found", lavel: "Not-found" },
+                { name: "error", lavel: "Error Page TEST", params: { code: "404" } }
 
 
             ]
@@ -31,12 +31,15 @@ export default {
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav" v-for="i in navLinks">
-                        <router-link :to="{ name: i.name }" class="nav-link active" aria-current="page">{{ i.lavel
-                        }}</router-link>
+                    <div class="navbar-nav " v-for="i in navLinks">
+                        <router-link :to="{ name: i.name, params: i.params }" class="nav-link active mx-3"
+                            aria-current="page">{{ i.lavel
+                            }}</router-link>
                     </div>
                 </div>
+
             </div>
         </nav>
     </section>

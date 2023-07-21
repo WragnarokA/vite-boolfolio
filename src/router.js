@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AppHome from './pages/AppHome.vue';
 import AppAbout from './pages/AppAbout.vue';
 import PostList from './pages/PostList.vue';
-import ErrorNotFound from './pages/ErrorNotFound.vue'
+import ErrorPage from './pages/ErrorPage.vue';
 
 
 const router = createRouter({
@@ -25,9 +25,9 @@ const router = createRouter({
             component: PostList
         },
         {
-            path: "/not-found",
-            name: "not-found",
-            component: ErrorNotFound
+            path: "/error/:code",
+            name: "error",
+            component: ErrorPage
         }
 
     ]
