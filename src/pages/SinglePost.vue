@@ -50,7 +50,7 @@ export default {
         <div class="d-flex justify-content-center">
 
             <div class="card" style="width: 18rem;">
-                <img src="..//assets/placeholder.jpg" class="card-img-top" alt="...">
+                <img :src="'http://localhost:8000/storage/' + post.image" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ post.title }}</h5>
                     <h3 class="card-title">Tipo: {{ post.type_id ? post.type_id : "Nessun tipo" }}</h3>
