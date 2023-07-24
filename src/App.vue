@@ -15,10 +15,6 @@ export default {
 
 
 <template>
-  <!-- <header>
-  Bar
-</header> -->
-
   <section>
     <!-- <h1>Bentornato su PostList "Wilmer" </h1>
     <ProjectCard /> -->

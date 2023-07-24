@@ -118,7 +118,7 @@ export default {
 
     <div class="row justify-content-around  flex-wrap gap-5">
 
-        <div v-for="post in posts" class="card" style="width: 18rem;">
+        <div v-for="post in  posts " class="card" style="width: 18rem;">
             <img src="..//assets/placeholder.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{ post.title }}</h5>
@@ -129,7 +129,8 @@ export default {
                     <li class="list-group-item" v-else>Nesun tag</li>
                 </ul>
                 <p class="card-text">{{ post.content }}</p>
-                <a href="" class="btn btn-primary">Vista</a>
+                <router-link :to="{ name: 'single-post', params: { id: post.id } }" class="btn btn-primary m-1">Vista
+                    Detagliata</router-link>
             </div>
         </div>
 

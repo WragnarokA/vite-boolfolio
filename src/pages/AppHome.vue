@@ -8,7 +8,8 @@ export default {
                 { name: "home", lavel: "Home" },
                 { name: "about", lavel: "Abaut us" },
                 { name: "posts", lavel: "Posts" },
-                { name: "error", lavel: "Error Page TEST", params: { code: "404" } }
+                // { name: "single-post", lavel: "Post", params: { id: 3 } },
+                // { name: "error", lavel: "Error Page TEST", params: { code: "404" } }
 
 
             ]
